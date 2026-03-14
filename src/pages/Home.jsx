@@ -17,7 +17,7 @@ export const Home = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-max">
           <Suspense
             fallback={
-              <div className="fixed inset-0 flex items-center justify-center bg-gray-50 dark:bg-gray-900 z-50">
+              <div className="fixed top-16 left-0 w-full h-[calc(100vh-64px)] flex items-center justify-center bg-gray-50 dark:bg-gray-900 z-50">
                 <div className="flex flex-col items-center gap-4">
                   {/* Spinner */}
                   <div className="w-20 h-20 border-8 border-gray-300 border-t-pink-500 rounded-full animate-spin"></div>
