@@ -15,7 +15,7 @@ export const SearchModal = ({ onClose, countries }) => {
 
   return (
     <div
-      onClick={onClose}
+      // onClick={onClose}
       className="fixed inset-0 z-50 flex items-start md:items-start justify-center bg-gray-800/40 backdrop-blur-sm p-4"
     >
       <div className="bg-white dark:bg-gray-900 rounded-2xl w-full max-w-md md:max-w-lg lg:max-w-xl p-6 shadow-2xl mt-12 md:mt-24 transition-colors">
