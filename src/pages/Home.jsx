@@ -15,7 +15,20 @@ export const Home = () => {
       </div>
       <div className="flex justify-center mt-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-max">
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense
+            fallback={
+              <div className="fixed inset-0 flex items-center justify-center bg-gray-50 dark:bg-gray-900 z-50">
+                <div className="flex flex-col items-center gap-4">
+                  {/* Spinner */}
+                  <div className="w-20 h-20 border-8 border-gray-300 border-t-pink-500 rounded-full animate-spin"></div>
+                  {/* Loading Text */}
+                  <p className="text-xl md:text-2xl font-semibold text-gray-700 dark:text-gray-200 animate-pulse">
+                    Loading, please wait...
+                  </p>
+                </div>
+              </div>
+            }
+          >
             <CountryCard country={countries} />
 
             {/* {countries.map((country) => (
